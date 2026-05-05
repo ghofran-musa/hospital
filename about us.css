@@ -61,7 +61,7 @@ body.dark-mode .home-content {
 .dark-mode .nav-links a {
 
 --pg-color: #0e1d21;
-coior:white;    
+color:white;    
 
 }
 .nav-links a:hover {
@@ -315,4 +315,7 @@ body.alt-layout  .controls-container {
 
 navbar ul li a:hover{
     color: rgb(16, 11, 20);
+}
+.dark-mode .layout .logo{
+    color:white;
 }
