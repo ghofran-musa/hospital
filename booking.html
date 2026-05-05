@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Zone-Booking</title>
+    <link rel="stylesheet" href="booking.style.css">
+</head>
+<body>
+
+<nav class="navbar" style="background-color:#677E8A;">
+  <div style="font-family: Arial, Helvetica, sans-serif; font: size 70px;font-weight: 1000;">Medical Zone</div>
+    <div>
+        <button id="btn" class="mode-btn">Dark Mode</button>
+        <button id="layoutbutton">Change Layout</button>
+    </div>
+</nav>
+<main>
+    <div class="pagecontent" id="content">
+      <div class="glass-box">
+     <h3>Booking Instructions</h3>
+     <ul>
+       <li>Please enter your full triple name</li>
+       <li>Ensure your phone number </li>
+       <li>Select an available appointment</li>
+     </ul>
+    </div> 
+    <div class="video">
+    <video width="100%" height="auto" controls muted >
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</div>   
+    <section class=" glass-box">
+    <h2>Patient Information Form</h2>
+    <form id="Form">
+    <div class="form-grid">
+    <div class="input">
+     <label>Full Name:</label>
+         <input type="text" id="username" placeholder="Enter your triple name">
+        <small class="errormessage" id="nameError"></small>
+        </div>
+
+         <div class="input">
+           <label>Age:</label>
+          <input type="number" id="patientAge" min="1" placeholder="enter your age">
+         </div>
+
+        <div class="input">
+          <label>Primary Phone:</label>
+          <input type="text" id="phone1" placeholder="enter phone">
+        </div>
+
+        <div class="input">
+          <label>Secondary Phone</label>
+          <input type="text" id="phone2" placeholder="enter phone">
+         </div>
+
+        <div class="input">
+           <label>Doctor</label>
+          <input type="text" id="doctorname" readonly >
+        </div>
+
+        <div class="input">
+          <label>Schedule</label>
+          <input type="text" id="appointment"  readonly >
+        </div>
+    </div>
+        <button type="submit" id="submitBtn" class="controlbutton">Confirm Booking</button>
+     </form>
+ </section>
+  </div>
+  <div class="map">
+   <h3 style="margin-bottom:16px ;">Our Location</h3>
+   <iframe 
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.171437149341!2d31.2357116!3d30.0444196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjkiTiAzMcKwMTQnMDguNiJF!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg" 
+       width="30%" 
+     height="200"
+     allowfullscreen="" 
+    loading="lazy">
+    </iframe>
+</div>
+</main>
+<footer>
+    <p>&copy; 2026 Medical Zone. All rights reserved.</p>
+</footer>
+<script src="booking.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
