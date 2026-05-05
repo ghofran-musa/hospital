@@ -149,8 +149,8 @@ color: white;
     border: 1px solid rgba(171, 175, 181, 0.1);
 }
 .dark-mode .rating-box {
-    background-color: #122e34;
-    border: 1px var(--primary-color);
+    background-color: #122e34 !important;
+    border: 1px var(--primary-color) !important;
     color: var(--text-color);
 }
 .rating-title h1 {
@@ -317,5 +317,5 @@ navbar ul li a:hover{
     color: rgb(16, 11, 20);
 }
 .dark-mode .layout .logo{
-    color:white;
+    color:white !important;
 }
