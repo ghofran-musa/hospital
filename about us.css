@@ -17,9 +17,16 @@ body {
     transition: all 0.5s ease;
     line-height: 1.6;
 }
-.dark-mode body {
-background-color: var(--pg-color);
-color: var(--text-color);
+
+body.dark-mode {
+    background-color:#0E1D21 !important;
+}
+
+body.dark-mode div:not(.navbar), 
+body.dark-mode section, 
+body.dark-mode .rating-box, 
+body.dark-mode .home-content {
+    background-color: transparent !important;
 }
 .navbar {
     display: flex;
@@ -54,7 +61,7 @@ color: var(--text-color);
 .dark-mode .nav-links a {
 
 --pg-color: #0e1d21;
-    
+coior:white;    
 
 }
 .nav-links a:hover {
