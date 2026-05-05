@@ -148,7 +148,7 @@ color: white;
     max-width: 450px;
     border: 1px solid rgba(171, 175, 181, 0.1);
 }
-.dark-mode .rating-box {
+body.dark-mode .rating-box {
     background-color: #122e34 !important;
     border: 1px var(--primary-color) !important;
     color: var(--text-color);
