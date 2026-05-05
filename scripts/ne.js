@@ -16,14 +16,12 @@ function showWelcome() {
   document.getElementById("frame").src = "yep/welcome.html";
 }
 
-function sendData(doctor, time) {
-    sessionStorage.setItem('selectedDocName', doctor);
-    sessionStorage.setItem('selectedSchedule', time);
-    window.location.href = 'booking.html';
-}
-let layout= document.getElementById("layout");
-    layout.addEventListener("click",function(){
-        document.body.classList.toggle("alt-layout")
-    });
-
+function handleBooking(time) {
+    const nameElement = document.getElementById('profile-doc-name');
+    if (nameElement) {
+        const docName = nameElement.innerText;
+        sessionStorage.setItem('selectedDocName', docName);
+        sessionStorage.setItem('selectedSchedule', time);
+        window.location.href = 'booking.html';
+    }
    
