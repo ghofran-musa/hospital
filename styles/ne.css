@@ -7,11 +7,11 @@
   font-family: 'Exo';
 }
 :root{
---bg-color:#4A5C6A;
+--bg-color:#8f9a9c;
 --text-color: #13262c;
---card-bg:#9BA8AB;
---card-hover:#1b3345;
---box-shadow:  0 0 20px 2px #7f8c93;
+--card-bg: #4A5C6A;
+--card-hover:#335f81;
+--box-shadow:  0 0 20px 2px #2d3235;
 }
 
 .dark-mode{
@@ -114,9 +114,9 @@ a{
   font-weight: bold;
 }
 a:hover{
-  color: var(--text-color);
+  color: #c8cccd;
   transform: translateY(-6px);
-  background: var(--card-hover);
+  background: #7f8c93;
   border-radius: 5px;
 }
 .dark-mode .a{
@@ -168,7 +168,7 @@ background-color: var(--card-bg);
 
 .card:hover {
   transform: translateY(-6px);
-  background: #44555e;
+  background:#b4c6d0;
   box-shadow:var(--box-shadow) !important;
 }
 .dark-mode .card:hover{
