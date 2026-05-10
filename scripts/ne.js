@@ -23,7 +23,7 @@ function sendData(doctor, time) {
 }
 let layout= document.getElementById("layout");
     layout.addEventListener("click",function(){
-        document.body.classList.toggle("alt-layout")
+        document.body.classList.toggle("alt-layout");
     });
 
    
