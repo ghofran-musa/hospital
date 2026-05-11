@@ -18,7 +18,7 @@ function showWelcome() {
 function sendData(doctor, time) {
     sessionStorage.setItem('selectedDocName', doctor);
     sessionStorage.setItem('selectedSchedule', time);
-    window.location.href = 'booking.html';
+    window.location.href = '../booking.html';
 }
 let layout= document.getElementById("layout");
     layout.addEventListener("click",function(){
