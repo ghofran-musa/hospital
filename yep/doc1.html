@@ -1,5 +1,6 @@
 
 <div class="content">
+  <base target="_parent">
   <script src="scripts/ne.js"></script>
 <img src="ngl4.jpg">
   <div>
@@ -15,14 +16,26 @@
   <p >Consultation Fee: $50</p>
   <div>
     <p >Select appointment:</p>
- <input type="radio" name="lang">Patient Appointment</p>
- <button onclick="sendData('DR.ALI', 'Saturday')" class="button">Book Now</button>
-<br>
-<input type="radio" value="10:00 AM"><span>2:00 PM - 5:00 PM</span>
-    <button style="border-radius: 8px; background-color: ghostwhite;" onclick="sendData('Dr.Wira', '2:00 AM - 1:00 PM')">Book Now</button>
-  </div>
-
-  
+<div>
+    <input type="radio" name="appointment" value="10:00 AM">
+    <span style="font-size: 18px; color: white;">10:00 AM - 01:00 PM</span>
+    <br>
+    <button 
+            onclick="sendData('Dr. Wira', '10:00 AM - 01:00 PM')";
+            style="border-radius: 8px; background-color: ghostwhite; padding: 5px 15px; margin-top: 5px;">
+            Book Now
+    </button>
+</div>
+    <div>
+    <input type="radio" name="appointment" value="02:00 PM">
+    <span style="font-size: 18px; color: white;">02:00 PM - 04:00 PM</span>
+    <br>
+    <button type="button" 
+            onclick="sendData('Dr. Wira', '02:00 PM - 04:00 PM')" 
+            style="border-radius: 8px; background-color: ghostwhite; padding: 5px 15px; cursor: pointer; margin-top: 5px;">
+            Book Now
+    </button>
+</div>
 </div>
 
 <style>
