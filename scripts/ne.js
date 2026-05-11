@@ -15,7 +15,6 @@ window.onload = function() {
 function showWelcome() {
   document.getElementById("frame").src = "yep/welcome.html";
 }
-
 function sendData(doctor, time) {
     sessionStorage.setItem('selectedDocName', doctor);
     sessionStorage.setItem('selectedSchedule', time);
