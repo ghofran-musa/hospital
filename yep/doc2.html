@@ -13,20 +13,26 @@
     <strong>(4.8/5)</strong>
   </div>
   <p >Consultation Fee: $50</p>
-  <div>
-    <p >Select appointment:</p>
-<input type="radio" value="10:00 AM"><span>10:00 AM - 1:00 PM</span> <a href="booking.html">
-    <button style="border-radius: 8px; background-color: ghostwhite;" onclick="sendData('Dr.Noor', '10:00 AM - 1:00 PM')">Book Now</button>
-</input>
+ <div>
+  <p>Select an appointment:</p>
+    <input type="radio" name="appointment" value="10:00 AM"><span color: white>10:00 AM - 01:00 PM</span>
+    
+    <button  
+            onclick="sendData('Dr.Noor', '10:00 AM - 1:00 PM')";
+            style="border-radius: 8px; background-color: ghostwhite; padding: 5px 15px; margin-top: 5px;">
+            Book Now
+    </button>
 <br>
-<input type="radio" value="10:00 AM"><span>2:00 PM - 5:00 PM</span> <a href="booking.html">
-    <button style="border-radius: 8px; background-color: ghostwhite;" onclick="sendData('Dr.Noor', '2:00 AM - 1:00 PM')">Book Now</button>
-</input>
-  </div>
 
-  
+    <input type="radio" name="appointment" value="02:00 PM"><span  color: white>02:00 PM - 04:00 PM</span>
+    
+    <button type="button" 
+            onclick="sendData('Dr.Noor', '2:00 AM - 1:00 PM')" 
+            style="border-radius: 8px; background-color: ghostwhite; padding: 5px 15px; cursor: pointer; margin-top: 5px;">
+            Book Now
+    </button>
 </div>
-
+</div>
 <style>
 
 body {
